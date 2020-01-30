@@ -1,0 +1,12 @@
+.UserItem {
+    width: 150px;
+    overflow: hidden;
+    
+}
+
+.avatar-image {
+    width: 100px;
+    height: 100px;
+    background-position: center;
+
+}  
