@@ -8,7 +8,7 @@ class App extends React.Component {
 
   render() {
 
-    const name = 'John Doe'
+
     return (
       <div className="App">
         <Navbar title='Github Finder' />

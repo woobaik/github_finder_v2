@@ -1,12 +1,16 @@
 .UserItem {
-    width: 150px;
-    overflow: hidden;
+    width: 30vw;
+    height: 30vh;
+    text-align: center;
+    border: 1px solid beige;
+    border-top: none;
+    
     
 }
 
-.avatar-image {
-    width: 100px;
-    height: 100px;
-    background-position: center;
-
+.avatar {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 50px;
 }  
