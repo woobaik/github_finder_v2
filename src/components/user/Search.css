@@ -1,0 +1,18 @@
+.Search {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.search-field {
+    width: 80vw;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.search-field:focus {
+    background-color: honeydew;
+    border: 3px solid white;
+}

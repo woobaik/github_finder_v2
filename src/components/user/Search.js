@@ -1,22 +1,18 @@
 import React, { Component } from 'react'
+import './Search.css'
 
 class Search extends Component {
-    state = {
-        text: ''
-    }
 
     searchUser = (e) => {
-        console.log(e.target.value)
-        this.setState({ [e.target.name]: e.target.value })
         this.props.searchUser(e.target.value)
     }
 
     render() {
 
         return (
-            <form>
-                <input type='text' value={this.state.text} placeholder='Search by Github ID' onChange={this.searchUser} name='text' />
-                <input type='submit' />
+            <form className='Search'>
+                <input type='text' value={this.props.value} placeholder='Search by Github ID' className='search-field' onChange={this.searchUser} name='text' />
+
             </form>
         )
     }

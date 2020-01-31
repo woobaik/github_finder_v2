@@ -1,4 +1,12 @@
 .Users {
+
+}
+
+.user-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.clear-field {
+    text-align: center;
 }
