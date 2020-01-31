@@ -9,13 +9,15 @@ class Users extends Component {
         loading: true
     }
     componentDidMount() {
-        axios.get('https://api.github.com/users').then((response) => {
+
+        axios.get(`https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_CLIENT_SECRET}`).then((response) => {
             this.setState({ users: response.data })
         })
         this.setState({ loading: false })
 
     }
     render() {
+
 
         return <div className='Users'>
             {this.state.loading ?
