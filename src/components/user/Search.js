@@ -1,21 +1,18 @@
 import React, { Component } from 'react'
 import './Search.css'
 
-class Search extends Component {
+const Search = (props) => {
 
-    searchUser = (e) => {
-        this.props.searchUser(e.target.value)
+    const SearchUser = (e) => {
+        props.searchUser(e.target.value)
     }
+    return (
+        <form className='Search'>
+            <input type='text' value={props.value} placeholder='Search by Github ID' className='search-field' onChange={SearchUser} name='text' />
 
-    render() {
+        </form>
+    )
 
-        return (
-            <form className='Search'>
-                <input type='text' value={this.props.value} placeholder='Search by Github ID' className='search-field' onChange={this.searchUser} name='text' />
-
-            </form>
-        )
-    }
 }
 
 export default Search
