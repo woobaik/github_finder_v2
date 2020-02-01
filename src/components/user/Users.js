@@ -36,6 +36,8 @@ class Users extends Component {
     }
 
     render() {
+        console.log(this.props)
+
         return <div className='Users'>
             <Search searchUser={this.searchUser} clearSearchForm={this.clearSearchForm} value={this.state.text} />
             <div className='clear-field'>
@@ -46,7 +48,7 @@ class Users extends Component {
                 {this.state.loading ?
                     <div>Loading</div> :
                     <Fragment>
-                        {this.state.users && this.state.users.map(user => <UserItem key={user.id} avatar={user.avatar_url} url={user.url} html_url={user.html_url} />)}
+                        {this.state.users && this.state.users.map(user => <UserItem key={user.id} avatar={user.avatar_url} url={user.url} html_url={user.html_url} login={user.login} />)}
                     </Fragment>
                 }
             </div>

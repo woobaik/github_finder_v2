@@ -11,6 +11,9 @@ const UserItem = (props) => {
                 <img src={avatar} className='avatar' />
             </div>
             <div>
+                {props.login}
+            </div>
+            <div>
                 <button><a href={html_url}>More</a></button>
             </div>
         </div>
