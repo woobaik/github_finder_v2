@@ -36,7 +36,7 @@ class Users extends Component {
     }
 
     render() {
-        console.log(this.props)
+
 
         return <div className='Users'>
             <Search searchUser={this.searchUser} clearSearchForm={this.clearSearchForm} value={this.state.text} />
